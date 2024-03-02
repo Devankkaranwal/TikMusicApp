@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132D55DA2B88B383007603B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55D92B88B383007603B5 /* AppDelegate.swift */; };
+		132D55DC2B88B383007603B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55DB2B88B383007603B5 /* SceneDelegate.swift */; };
+		132D55DE2B88B383007603B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55DD2B88B383007603B5 /* ViewController.swift */; };
+		132D55E12B88B383007603B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132D55DF2B88B383007603B5 /* Main.storyboard */; };
+		132D55E32B88B38B007603B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132D55E22B88B38B007603B5 /* Assets.xcassets */; };
+		132D55E62B88B38B007603B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132D55E42B88B38B007603B5 /* LaunchScreen.storyboard */; };
+		132D55F12B88B38C007603B5 /* TikMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55F02B88B38C007603B5 /* TikMusicAppTests.swift */; };
+		132D55FB2B88B38C007603B5 /* TikMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55FA2B88B38C007603B5 /* TikMusicAppUITests.swift */; };
+		132D55FD2B88B38C007603B5 /* TikMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D55FC2B88B38C007603B5 /* TikMusicAppUITestsLaunchTests.swift */; };
+		132D560B2B88B4D9007603B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D560A2B88B4D9007603B5 /* HomeViewController.swift */; };
+		132D56172B88B585007603B5 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132D56152B88B585007603B5 /* HomeTableViewCell.xib */; };
+		132D56182B88B585007603B5 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D56162B88B585007603B5 /* HomeTableViewCell.swift */; };
+		132D561B2B88B5AC007603B5 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132D56192B88B5AC007603B5 /* CommentTableViewCell.xib */; };
+		132D561C2B88B5AC007603B5 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D561A2B88B5AC007603B5 /* CommentTableViewCell.swift */; };
+		132D56262B88BF1E007603B5 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D56252B88BF1E007603B5 /* Video.swift */; };
+		132D56292B88C427007603B5 /* UIKit Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D56282B88C427007603B5 /* UIKit Extensions.swift */; };
+		132D562B2B88C4AD007603B5 /* CommentPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D562A2B88C4AD007603B5 /* CommentPopUpView.swift */; };
+		132D562D2B88C555007603B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D562C2B88C555007603B5 /* Constants.swift */; };
+		136EC1452B89BF9A00F88E75 /* MediaPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1432B89BF9A00F88E75 /* MediaPostingViewController.swift */; };
+		136EC1462B89BF9A00F88E75 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1442B89BF9A00F88E75 /* MediaViewController.swift */; };
+		136EC1482B89BFF900F88E75 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1472B89BFF900F88E75 /* RecordButton.swift */; };
+		136EC14A2B89C03100F88E75 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1492B89C03000F88E75 /* Colors.swift */; };
+		136EC14C2B89C12500F88E75 /* AccessPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC14B2B89C12500F88E75 /* AccessPermissionView.swift */; };
+		136EC14E2B89C16700F88E75 /* MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC14D2B89C16700F88E75 /* MediaPlayerView.swift */; };
+		136EC1502B89C1B100F88E75 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC14F2B89C1B100F88E75 /* CameraManager.swift */; };
+		136EC1542B89E00E00F88E75 /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1522B89E00D00F88E75 /* DiscoverCell.swift */; };
+		136EC1552B89E00E00F88E75 /* DiscoverHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1532B89E00D00F88E75 /* DiscoverHeader.swift */; };
+		136EC1572B89E01D00F88E75 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1562B89E01D00F88E75 /* DiscoverVC.swift */; };
+		136EC15A2B8A1D7800F88E75 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1592B8A1D7800F88E75 /* NotificationsVC.swift */; };
+		136EC15E2B8A1D8B00F88E75 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC15B2B8A1D8B00F88E75 /* NotificationsCell.swift */; };
+		136EC15F2B8A1D8B00F88E75 /* NotificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC15C2B8A1D8B00F88E75 /* NotificationTypeCell.swift */; };
+		136EC1602B8A1D8B00F88E75 /* NotificationsNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC15D2B8A1D8B00F88E75 /* NotificationsNavBarView.swift */; };
+		136EC1622B8A1FAB00F88E75 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136EC1612B8A1FAB00F88E75 /* NotificationType.swift */; };
+		13E01FD62B930F5700E7A23D /* Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 13E01FD52B930F5600E7A23D /* Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4 */; };
+		5DDFDA303AD6C118129EE7EB /* Pods_TikMusicApp_TikMusicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7419B573EE46B1C9859E16FE /* Pods_TikMusicApp_TikMusicAppUITests.framework */; };
+		E4E19EBF737E7642F889208A /* Pods_TikMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D722946AD117F79C121B5E /* Pods_TikMusicApp.framework */; };
+		E8DBB2C15F88E40A3AA84310 /* Pods_TikMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC71EB7FCE3AED40D7ED75B1 /* Pods_TikMusicAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		132D55ED2B88B38C007603B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132D55CE2B88B383007603B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132D55D52B88B383007603B5;
+			remoteInfo = TikMusicApp;
+		};
+		132D55F72B88B38C007603B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132D55CE2B88B383007603B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132D55D52B88B383007603B5;
+			remoteInfo = TikMusicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AC5F26EADBEC4C6DE7543FE /* Pods-TikMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicApp.release.xcconfig"; path = "Target Support Files/Pods-TikMusicApp/Pods-TikMusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		0E9C7D9545EE008D1AB94C28 /* Pods-TikMusicApp-TikMusicAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicApp-TikMusicAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TikMusicApp-TikMusicAppUITests/Pods-TikMusicApp-TikMusicAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		132D55D62B88B383007603B5 /* TikMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		132D55D92B88B383007603B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		132D55DB2B88B383007603B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		132D55DD2B88B383007603B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		132D55E02B88B383007603B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		132D55E22B88B38B007603B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		132D55E52B88B38B007603B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		132D55E72B88B38B007603B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132D55EC2B88B38C007603B5 /* TikMusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikMusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		132D55F02B88B38C007603B5 /* TikMusicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikMusicAppTests.swift; sourceTree = "<group>"; };
+		132D55F62B88B38C007603B5 /* TikMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		132D55FA2B88B38C007603B5 /* TikMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikMusicAppUITests.swift; sourceTree = "<group>"; };
+		132D55FC2B88B38C007603B5 /* TikMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		132D560A2B88B4D9007603B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		132D56152B88B585007603B5 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		132D56162B88B585007603B5 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		132D56192B88B5AC007603B5 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		132D561A2B88B5AC007603B5 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		132D56252B88BF1E007603B5 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		132D56282B88C427007603B5 /* UIKit Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit Extensions.swift"; sourceTree = "<group>"; };
+		132D562A2B88C4AD007603B5 /* CommentPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentPopUpView.swift; sourceTree = "<group>"; };
+		132D562C2B88C555007603B5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		136EC1432B89BF9A00F88E75 /* MediaPostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPostingViewController.swift; sourceTree = "<group>"; };
+		136EC1442B89BF9A00F88E75 /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		136EC1472B89BFF900F88E75 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		136EC1492B89C03000F88E75 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		136EC14B2B89C12500F88E75 /* AccessPermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessPermissionView.swift; sourceTree = "<group>"; };
+		136EC14D2B89C16700F88E75 /* MediaPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerView.swift; sourceTree = "<group>"; };
+		136EC14F2B89C1B100F88E75 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		136EC1522B89E00D00F88E75 /* DiscoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
+		136EC1532B89E00D00F88E75 /* DiscoverHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverHeader.swift; sourceTree = "<group>"; };
+		136EC1562B89E01D00F88E75 /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		136EC1592B8A1D7800F88E75 /* NotificationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		136EC15B2B8A1D8B00F88E75 /* NotificationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
+		136EC15C2B8A1D8B00F88E75 /* NotificationTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTypeCell.swift; sourceTree = "<group>"; };
+		136EC15D2B8A1D8B00F88E75 /* NotificationsNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsNavBarView.swift; sourceTree = "<group>"; };
+		136EC1612B8A1FAB00F88E75 /* NotificationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		13E01FD52B930F5600E7A23D /* Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4"; sourceTree = "<group>"; };
+		142AAC94F60224CC7B414FDA /* Pods-TikMusicApp-TikMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicApp-TikMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TikMusicApp-TikMusicAppUITests/Pods-TikMusicApp-TikMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		549089D19A293D9F758BA7C9 /* Pods-TikMusicAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TikMusicAppTests/Pods-TikMusicAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7419B573EE46B1C9859E16FE /* Pods_TikMusicApp_TikMusicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikMusicApp_TikMusicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D722946AD117F79C121B5E /* Pods_TikMusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikMusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC71EB7FCE3AED40D7ED75B1 /* Pods_TikMusicAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikMusicAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47638C67D40481A4CDA9FDD /* Pods-TikMusicAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicAppTests.release.xcconfig"; path = "Target Support Files/Pods-TikMusicAppTests/Pods-TikMusicAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB7025E6C913EA639C9AEC9F /* Pods-TikMusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikMusicApp.debug.xcconfig"; path = "Target Support Files/Pods-TikMusicApp/Pods-TikMusicApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		132D55D32B88B383007603B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E19EBF737E7642F889208A /* Pods_TikMusicApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55E92B88B38C007603B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DBB2C15F88E40A3AA84310 /* Pods_TikMusicAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55F32B88B38C007603B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDFDA303AD6C118129EE7EB /* Pods_TikMusicApp_TikMusicAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132D55CD2B88B383007603B5 = {
+			isa = PBXGroup;
+			children = (
+				132D55D82B88B383007603B5 /* TikMusicApp */,
+				132D55EF2B88B38C007603B5 /* TikMusicAppTests */,
+				132D55F92B88B38C007603B5 /* TikMusicAppUITests */,
+				132D55D72B88B383007603B5 /* Products */,
+				CE9C104ABCE080D15D1AAB35 /* Pods */,
+				7F9F513A4AC70A2A9CA30654 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		132D55D72B88B383007603B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				132D55D62B88B383007603B5 /* TikMusicApp.app */,
+				132D55EC2B88B38C007603B5 /* TikMusicAppTests.xctest */,
+				132D55F62B88B38C007603B5 /* TikMusicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		132D55D82B88B383007603B5 /* TikMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				136EC1812B8A234300F88E75 /* Bookmark */,
+				136EC1702B8A210900F88E75 /* Feed */,
+				136EC1632B8A20C500F88E75 /* Profile */,
+				136EC1582B8A1D3F00F88E75 /* Notification */,
+				136EC1512B89DFFA00F88E75 /* Discover */,
+				136EC1402B89BEC600F88E75 /* Media */,
+				132D56272B88C40D007603B5 /* Extensions */,
+				132D56242B88BDF0007603B5 /* Home View */,
+				132D561D2B88BC8A007603B5 /* Raw Videos */,
+				132D56142B88B547007603B5 /* TableViewCell */,
+				132D56092B88B4C4007603B5 /* Controller */,
+				132D55D92B88B383007603B5 /* AppDelegate.swift */,
+				132D55DB2B88B383007603B5 /* SceneDelegate.swift */,
+				132D55DD2B88B383007603B5 /* ViewController.swift */,
+				132D55DF2B88B383007603B5 /* Main.storyboard */,
+				132D55E22B88B38B007603B5 /* Assets.xcassets */,
+				132D55E42B88B38B007603B5 /* LaunchScreen.storyboard */,
+				132D55E72B88B38B007603B5 /* Info.plist */,
+			);
+			path = TikMusicApp;
+			sourceTree = "<group>";
+		};
+		132D55EF2B88B38C007603B5 /* TikMusicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				132D55F02B88B38C007603B5 /* TikMusicAppTests.swift */,
+			);
+			path = TikMusicAppTests;
+			sourceTree = "<group>";
+		};
+		132D55F92B88B38C007603B5 /* TikMusicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				132D55FA2B88B38C007603B5 /* TikMusicAppUITests.swift */,
+				132D55FC2B88B38C007603B5 /* TikMusicAppUITestsLaunchTests.swift */,
+			);
+			path = TikMusicAppUITests;
+			sourceTree = "<group>";
+		};
+		132D56092B88B4C4007603B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				132D560A2B88B4D9007603B5 /* HomeViewController.swift */,
+				136EC1562B89E01D00F88E75 /* DiscoverVC.swift */,
+				136EC1442B89BF9A00F88E75 /* MediaViewController.swift */,
+				136EC1432B89BF9A00F88E75 /* MediaPostingViewController.swift */,
+				136EC1592B8A1D7800F88E75 /* NotificationsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		132D56142B88B547007603B5 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				132D56162B88B585007603B5 /* HomeTableViewCell.swift */,
+				132D56152B88B585007603B5 /* HomeTableViewCell.xib */,
+				132D561A2B88B5AC007603B5 /* CommentTableViewCell.swift */,
+				132D56192B88B5AC007603B5 /* CommentTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		132D561D2B88BC8A007603B5 /* Raw Videos */ = {
+			isa = PBXGroup;
+			children = (
+				13E01FD52B930F5600E7A23D /* Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4 */,
+			);
+			path = "Raw Videos";
+			sourceTree = "<group>";
+		};
+		132D56242B88BDF0007603B5 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				132D562A2B88C4AD007603B5 /* CommentPopUpView.swift */,
+				132D56252B88BF1E007603B5 /* Video.swift */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		132D56272B88C40D007603B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				136EC1492B89C03000F88E75 /* Colors.swift */,
+				132D56282B88C427007603B5 /* UIKit Extensions.swift */,
+				132D562C2B88C555007603B5 /* Constants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		136EC1402B89BEC600F88E75 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				136EC1472B89BFF900F88E75 /* RecordButton.swift */,
+				136EC14D2B89C16700F88E75 /* MediaPlayerView.swift */,
+				136EC14F2B89C1B100F88E75 /* CameraManager.swift */,
+				136EC14B2B89C12500F88E75 /* AccessPermissionView.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		136EC1512B89DFFA00F88E75 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				136EC1522B89E00D00F88E75 /* DiscoverCell.swift */,
+				136EC1532B89E00D00F88E75 /* DiscoverHeader.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		136EC1582B8A1D3F00F88E75 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				136EC15B2B8A1D8B00F88E75 /* NotificationsCell.swift */,
+				136EC15D2B8A1D8B00F88E75 /* NotificationsNavBarView.swift */,
+				136EC15C2B8A1D8B00F88E75 /* NotificationTypeCell.swift */,
+				136EC1612B8A1FAB00F88E75 /* NotificationType.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		136EC1632B8A20C500F88E75 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		136EC1702B8A210900F88E75 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		136EC1812B8A234300F88E75 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		7F9F513A4AC70A2A9CA30654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D722946AD117F79C121B5E /* Pods_TikMusicApp.framework */,
+				7419B573EE46B1C9859E16FE /* Pods_TikMusicApp_TikMusicAppUITests.framework */,
+				AC71EB7FCE3AED40D7ED75B1 /* Pods_TikMusicAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9C104ABCE080D15D1AAB35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB7025E6C913EA639C9AEC9F /* Pods-TikMusicApp.debug.xcconfig */,
+				0AC5F26EADBEC4C6DE7543FE /* Pods-TikMusicApp.release.xcconfig */,
+				142AAC94F60224CC7B414FDA /* Pods-TikMusicApp-TikMusicAppUITests.debug.xcconfig */,
+				0E9C7D9545EE008D1AB94C28 /* Pods-TikMusicApp-TikMusicAppUITests.release.xcconfig */,
+				549089D19A293D9F758BA7C9 /* Pods-TikMusicAppTests.debug.xcconfig */,
+				C47638C67D40481A4CDA9FDD /* Pods-TikMusicAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		132D55D52B88B383007603B5 /* TikMusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132D56002B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicApp" */;
+			buildPhases = (
+				71D689905E401B849DBF5D2D /* [CP] Check Pods Manifest.lock */,
+				132D55D22B88B383007603B5 /* Sources */,
+				132D55D32B88B383007603B5 /* Frameworks */,
+				132D55D42B88B383007603B5 /* Resources */,
+				5FDC304A34E5BC0FC542F9F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikMusicApp;
+			productName = TikMusicApp;
+			productReference = 132D55D62B88B383007603B5 /* TikMusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		132D55EB2B88B38C007603B5 /* TikMusicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132D56032B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicAppTests" */;
+			buildPhases = (
+				A8A382371124C45542BDCF26 /* [CP] Check Pods Manifest.lock */,
+				132D55E82B88B38C007603B5 /* Sources */,
+				132D55E92B88B38C007603B5 /* Frameworks */,
+				132D55EA2B88B38C007603B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132D55EE2B88B38C007603B5 /* PBXTargetDependency */,
+			);
+			name = TikMusicAppTests;
+			productName = TikMusicAppTests;
+			productReference = 132D55EC2B88B38C007603B5 /* TikMusicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		132D55F52B88B38C007603B5 /* TikMusicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132D56062B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicAppUITests" */;
+			buildPhases = (
+				841599E8EEC27AD9538D1DFF /* [CP] Check Pods Manifest.lock */,
+				132D55F22B88B38C007603B5 /* Sources */,
+				132D55F32B88B38C007603B5 /* Frameworks */,
+				132D55F42B88B38C007603B5 /* Resources */,
+				87302B83558C8737F0BFF9F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132D55F82B88B38C007603B5 /* PBXTargetDependency */,
+			);
+			name = TikMusicAppUITests;
+			productName = TikMusicAppUITests;
+			productReference = 132D55F62B88B38C007603B5 /* TikMusicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		132D55CE2B88B383007603B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					132D55D52B88B383007603B5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					132D55EB2B88B38C007603B5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 132D55D52B88B383007603B5;
+					};
+					132D55F52B88B38C007603B5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 132D55D52B88B383007603B5;
+					};
+				};
+			};
+			buildConfigurationList = 132D55D12B88B383007603B5 /* Build configuration list for PBXProject "TikMusicApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 132D55CD2B88B383007603B5;
+			productRefGroup = 132D55D72B88B383007603B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				132D55D52B88B383007603B5 /* TikMusicApp */,
+				132D55EB2B88B38C007603B5 /* TikMusicAppTests */,
+				132D55F52B88B38C007603B5 /* TikMusicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		132D55D42B88B383007603B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132D55E62B88B38B007603B5 /* LaunchScreen.storyboard in Resources */,
+				13E01FD62B930F5700E7A23D /* Haryanvi WhatsApp Status _ He _ Rawme Hooda _ Pranjal Dahiya _ Latest Haryanvi Status 2023.mp4 in Resources */,
+				132D55E32B88B38B007603B5 /* Assets.xcassets in Resources */,
+				132D56172B88B585007603B5 /* HomeTableViewCell.xib in Resources */,
+				132D55E12B88B383007603B5 /* Main.storyboard in Resources */,
+				132D561B2B88B5AC007603B5 /* CommentTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55EA2B88B38C007603B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55F42B88B38C007603B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FDC304A34E5BC0FC542F9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp/Pods-TikMusicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp/Pods-TikMusicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp/Pods-TikMusicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D689905E401B849DBF5D2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikMusicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		841599E8EEC27AD9538D1DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikMusicApp-TikMusicAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87302B83558C8737F0BFF9F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp-TikMusicAppUITests/Pods-TikMusicApp-TikMusicAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp-TikMusicAppUITests/Pods-TikMusicApp-TikMusicAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikMusicApp-TikMusicAppUITests/Pods-TikMusicApp-TikMusicAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8A382371124C45542BDCF26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikMusicAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		132D55D22B88B383007603B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136EC1502B89C1B100F88E75 /* CameraManager.swift in Sources */,
+				136EC1542B89E00E00F88E75 /* DiscoverCell.swift in Sources */,
+				136EC14C2B89C12500F88E75 /* AccessPermissionView.swift in Sources */,
+				136EC14A2B89C03100F88E75 /* Colors.swift in Sources */,
+				132D55DE2B88B383007603B5 /* ViewController.swift in Sources */,
+				136EC1452B89BF9A00F88E75 /* MediaPostingViewController.swift in Sources */,
+				136EC15F2B8A1D8B00F88E75 /* NotificationTypeCell.swift in Sources */,
+				136EC1462B89BF9A00F88E75 /* MediaViewController.swift in Sources */,
+				132D55DA2B88B383007603B5 /* AppDelegate.swift in Sources */,
+				132D55DC2B88B383007603B5 /* SceneDelegate.swift in Sources */,
+				136EC15E2B8A1D8B00F88E75 /* NotificationsCell.swift in Sources */,
+				136EC14E2B89C16700F88E75 /* MediaPlayerView.swift in Sources */,
+				136EC1572B89E01D00F88E75 /* DiscoverVC.swift in Sources */,
+				136EC1622B8A1FAB00F88E75 /* NotificationType.swift in Sources */,
+				132D562B2B88C4AD007603B5 /* CommentPopUpView.swift in Sources */,
+				132D560B2B88B4D9007603B5 /* HomeViewController.swift in Sources */,
+				132D56182B88B585007603B5 /* HomeTableViewCell.swift in Sources */,
+				132D56262B88BF1E007603B5 /* Video.swift in Sources */,
+				136EC1482B89BFF900F88E75 /* RecordButton.swift in Sources */,
+				132D561C2B88B5AC007603B5 /* CommentTableViewCell.swift in Sources */,
+				136EC1552B89E00E00F88E75 /* DiscoverHeader.swift in Sources */,
+				136EC1602B8A1D8B00F88E75 /* NotificationsNavBarView.swift in Sources */,
+				136EC15A2B8A1D7800F88E75 /* NotificationsVC.swift in Sources */,
+				132D562D2B88C555007603B5 /* Constants.swift in Sources */,
+				132D56292B88C427007603B5 /* UIKit Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55E82B88B38C007603B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132D55F12B88B38C007603B5 /* TikMusicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132D55F22B88B38C007603B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132D55FB2B88B38C007603B5 /* TikMusicAppUITests.swift in Sources */,
+				132D55FD2B88B38C007603B5 /* TikMusicAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		132D55EE2B88B38C007603B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132D55D52B88B383007603B5 /* TikMusicApp */;
+			targetProxy = 132D55ED2B88B38C007603B5 /* PBXContainerItemProxy */;
+		};
+		132D55F82B88B38C007603B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132D55D52B88B383007603B5 /* TikMusicApp */;
+			targetProxy = 132D55F72B88B38C007603B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		132D55DF2B88B383007603B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				132D55E02B88B383007603B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		132D55E42B88B38B007603B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				132D55E52B88B38B007603B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		132D55FE2B88B38C007603B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		132D55FF2B88B38C007603B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		132D56012B88B38C007603B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7025E6C913EA639C9AEC9F /* Pods-TikMusicApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikMusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		132D56022B88B38C007603B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC5F26EADBEC4C6DE7543FE /* Pods-TikMusicApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikMusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		132D56042B88B38C007603B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549089D19A293D9F758BA7C9 /* Pods-TikMusicAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikMusicApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TikMusicApp";
+			};
+			name = Debug;
+		};
+		132D56052B88B38C007603B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47638C67D40481A4CDA9FDD /* Pods-TikMusicAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikMusicApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TikMusicApp";
+			};
+			name = Release;
+		};
+		132D56072B88B38C007603B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142AAC94F60224CC7B414FDA /* Pods-TikMusicApp-TikMusicAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikMusicApp;
+			};
+			name = Debug;
+		};
+		132D56082B88B38C007603B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9C7D9545EE008D1AB94C28 /* Pods-TikMusicApp-TikMusicAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.TikMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikMusicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		132D55D12B88B383007603B5 /* Build configuration list for PBXProject "TikMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132D55FE2B88B38C007603B5 /* Debug */,
+				132D55FF2B88B38C007603B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132D56002B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132D56012B88B38C007603B5 /* Debug */,
+				132D56022B88B38C007603B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132D56032B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132D56042B88B38C007603B5 /* Debug */,
+				132D56052B88B38C007603B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132D56062B88B38C007603B5 /* Build configuration list for PBXNativeTarget "TikMusicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132D56072B88B38C007603B5 /* Debug */,
+				132D56082B88B38C007603B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 132D55CE2B88B383007603B5 /* Project object */;
+}
